@@ -1,117 +1,185 @@
-# 🐍 ComPyle – Compilador Matemático em Python
+\# 🧩 ComPyle – Compilador Matemático em Python
 
-![Logo do ComPyle](logo.png)
+!\[Logo do ComPyle\](logo.png)
 
-O **ComPyle** é um compilador educacional desenvolvido em **Python**, capaz de **analisar, otimizar e executar expressões matemáticas** escritas em código.  
-Ele foi criado com o objetivo de **demonstrar visualmente o processo de compilação**, passando por todas as etapas fundamentais de um compilador real.
+O \*\*ComPyle\*\* é um compilador experimental desenvolvido em \*\*Python\*\* com o objetivo de \*\*demonstrar, de forma didática e visual, o processo de compilação de expressões matemáticas\*\*.
 
----
+O projeto tem caráter \*\*educacional\*\* e busca apresentar, de modo estruturado, as principais etapas de um compilador tradicional — desde a análise léxica até a execução do código.
 
-## ⚙️ Funcionalidades
+\---
 
-- 🧠 **Leitura automática de arquivos `.py`**
-- 🔍 **Análise Léxica:** tokenização dos elementos da expressão  
-- 🧩 **Análise Sintática:** construção da árvore de derivação  
-- ✅ **Análise Semântica:** validação de funções e operações permitidas  
-- ⚡ **Geração de Código Intermediário (IR)**
-- 🧮 **Otimização de Instruções**
-- 🚀 **Execução e exibição do resultado final**
-- 🎨 **Interface Gráfica (Tkinter)** com exibição das etapas e saída formatada
+\## 🎯 Objetivo Geral
 
----
+Desenvolver um ambiente de compilação interativo capaz de \*\*ler arquivos em Python contendo expressões matemáticas\*\*, realizar a \*\*análise completa do código\*\*, \*\*gerar a representação intermediária\*\*, e \*\*executar as instruções\*\*, evidenciando cada uma das fases envolvidas no processo.
 
-## 🧮 Funções matemáticas suportadas
+\---
 
-O ComPyle reconhece e explica automaticamente as seguintes funções do módulo `math`:
+\## ⚙️ Funcionalidades Principais
+
+\- \*\*Leitura automática de arquivos \`.py\`\*\*
+
+\- \*\*Análise Léxica:\*\* identificação e categorização dos tokens presentes no código
+
+\- \*\*Análise Sintática:\*\* construção da árvore de derivação da expressão
+
+\- \*\*Análise Semântica:\*\* validação de funções matemáticas reconhecidas
+
+\- \*\*Geração de Código Intermediário (IR):\*\* representação em formato simplificado
+
+\- \*\*Otimização:\*\* eliminação de instruções redundantes
+
+\- \*\*Execução:\*\* avaliação final da expressão
+
+\- \*\*Interface Gráfica (Tkinter):\*\* interação visual com o processo de compilação
+
+\---
+
+\## 🧮 Funções Matemáticas Suportadas
+
+O compilador reconhece as seguintes funções do módulo \`math\` da linguagem Python:
 
 sqrt, pow, exp, log, log10, sin, cos, tan,
+
 floor, ceil, modf, remainder, isqrt, fmod, trunc,
+
 degrees, radians, cbrt
 
 yaml
+
 Copiar código
 
----
+Essas funções contemplam operações fundamentais de \*\*álgebra, trigonometria e análise numérica\*\*, permitindo que o ComPyle seja utilizado em contextos de \*\*ensino de compiladores e matemática computacional\*\*.
 
-## 🖥️ Interface
+\---
 
-A interface gráfica foi construída com **Tkinter**, utilizando o tema escuro e elementos estilizados.  
-É possível selecionar um **arquivo `.py`** que contenha expressões matemáticas, e o compilador irá:
+\## 🖥️ Interface e Usabilidade
 
-1. Extrair automaticamente as funções `math`
-2. Exibir todas as etapas do processo de compilação
-3. Mostrar o **resultado final da execução**
+A interface gráfica foi desenvolvida em \*\*Tkinter\*\*, utilizando um \*\*layout temático escuro\*\* com contrastes suaves para melhor legibilidade.
 
-![Tela do ComPyle](screenshot.png)
+O usuário pode selecionar um \*\*arquivo \`.py\`\*\* contendo expressões matemáticas e acompanhar, de forma interativa, as seguintes etapas:
 
----
+1\. Extração automática das funções do módulo \`math\`
 
-## 📁 Estrutura do Projeto
+2\. Apresentação das fases de compilação
 
-```plaintext
+3\. Exibição da saída otimizada e do resultado final
+
+!\[Interface do ComPyle\](screenshot.png)
+
+\---
+
+\## 🗂️ Estrutura do Projeto
+
+\`\`\`plaintext
+
 Compyle/
- ├── lexer.py
- ├── parser_.py
- ├── semantic.py
- ├── ir_generator.py
- ├── optimizer.py
- ├── executor.py
- ├── main.py
- ├── logo.png
- ├── test.py
- └── README.md
-🚀 Como executar
-🐍 Pré-requisitos
-Python 3.9+
 
-Biblioteca Pillow (para exibir a logo)
+├── lexer.py # Analisador Léxico
 
-Instale o Pillow com o comando:
+├── parser\_.py # Analisador Sintático
+
+├── semantic.py # Verificador Semântico
+
+├── ir\_generator.py # Gerador de Código Intermediário
+
+├── optimizer.py # Otimizador de Instruções
+
+├── executor.py # Executor das Operações
+
+├── main.py # Interface Gráfica e Controle Principal
+
+├── logo.png # Logotipo do Projeto
+
+├── test.py # Arquivo de Testes
+
+└── README.md # Documento Descritivo
+
+🚀 Execução do Projeto
+
+🐍 Requisitos
+
+Python 3.9 ou superior
+
+Biblioteca Pillow para exibição de imagens
+
+Instalação dos requisitos:
 
 bash
+
 Copiar código
+
 pip install pillow
-▶️ Executar a Interface Gráfica
-Na pasta principal do projeto, execute:
+
+▶️ Execução
+
+No diretório principal do projeto:
 
 bash
+
 Copiar código
+
 python main.py
-Passos:
 
-Clique em “Procurar Arquivo”
+Etapas de uso:
 
-Selecione um arquivo .py (exemplo: test.py)
+Selecionar o arquivo .py contendo expressões matemáticas
 
-Clique em “Compilar Arquivo .py”
+Executar o processo de compilação
 
-Acompanhe todas as etapas da compilação na área branca inferior
+Visualizar, na área de saída, as fases e o resultado final
 
-🧾 Exemplo de arquivo test.py
+🧾 Exemplo de Arquivo test.py
+
 python
+
 Copiar código
+
 import math
 
 a = math.sqrt(9)
+
 b = math.pow(2, 5) + math.log10(100)
+
 print(math.sin(1.57) + math.cos(0))
+
 resultado = math.cbrt(27) + math.trunc(3.9)
-🧠 Conceitos Envolvidos
-Etapa	Descrição
-Léxica	Reconhecimento dos tokens (números, operadores, nomes)
-Sintática	Construção da árvore de análise
-Semântica	Validação de funções e variáveis
-Intermediário	Tradução para instruções IR
-Otimização	Simplificação de código redundante
-Execução	Cálculo e exibição do resultado
+
+🧠 Etapas do Processo de Compilação
+
+EtapaDescrição
+
+Análise LéxicaIdentifica tokens, números, operadores e símbolos.
+
+Análise SintáticaEstrutura a expressão em uma árvore hierárquica.
+
+Análise SemânticaVerifica a validade de funções e variáveis.
+
+Código IntermediárioTraduz a árvore em instruções de execução.
+
+OtimizaçãoRemove redundâncias e simplifica o código.
+
+ExecuçãoCalcula e exibe o resultado da expressão.
+
+🧩 Relevância Acadêmica
+
+O ComPyle foi concebido como um projeto de apoio ao ensino de Linguagens Formais, Compiladores e Processamento de Linguagens, permitindo que estudantes visualizem, em tempo real, como ocorre a transformação de uma expressão matemática em código executável.
+
+Além de seu valor didático, o projeto também exemplifica o uso de programação estruturada, orientação a objetos e bibliotecas gráficas em Python.
 
 👨‍💻 Autor
+
 Lucas Rodrigues Dias
-📍 Desenvolvedor & Estudante de Sistemas de Informação
-💼 GitHub: @lucasrodriguesdias
-✉️ E-mail: adicione seu contato aqui, se quiser
+
+Graduando em Sistemas de Informação
+
+Desenvolvedor com foco em automação, linguagens de programação e sistemas educacionais.
+
+🔗 GitHub: @lucasrodriguesdias
+
+✉️ Contato: \[adicione seu e-mail aqui se desejar\]
 
 🪪 Licença
-Este projeto foi desenvolvido para fins educacionais e demonstração prática de conceitos de compiladores.
-Licença livre para uso e modificação, desde que citada a fonte original.
 
+Este projeto é distribuído sob licença livre, com finalidade exclusivamente educacional e acadêmica.
+
+O uso e a modificação são permitidos, desde que seja mantida a referência ao autor original.
