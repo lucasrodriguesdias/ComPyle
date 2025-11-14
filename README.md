@@ -131,14 +131,11 @@ Além de seu valor didático, o projeto também exemplifica o uso de **programa�
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
-**Lucas Rodrigues Dias Nascimento**  
-Graduando em **Ciência da Computação**  
-Desenvolvedor com foco em **automação, linguagens de programação e sistemas educacionais**.  
-
-🔗 GitHub: [@lucasrodriguesdias](https://github.com/lucasrodriguesdias)  
-✉️ Contato: lucasrd1407@gmail.com
+**Lucas Rodrigues Dias Nascimento**
+**Kayky Ferreira Torres Vieira**
+Graduandos em **Ciência da Computação**  
 
 ---
 
