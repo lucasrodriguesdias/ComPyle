@@ -49,8 +49,6 @@ O usuário pode selecionar um **arquivo `.py`** contendo expressões matemática
 2. Apresentação das fases de compilação  
 3. Exibição da saída otimizada e do resultado final  
 
-![Interface do ComPyle](screenshot.png)
-
 ---
 
 ## 🗂️ Estrutura do Projeto
@@ -134,7 +132,9 @@ Além de seu valor didático, o projeto também exemplifica o uso de **programa�
 ## 👨‍💻 Autores
 
 **Lucas Rodrigues Dias Nascimento**
+
 **Kayky Ferreira Torres Vieira**
+
 Graduandos em **Ciência da Computação**  
 
 ---
